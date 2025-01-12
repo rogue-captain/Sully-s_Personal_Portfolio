@@ -126,9 +126,12 @@
 }
 
 #project-grid {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   /* flex-direction: row-reverse; */
+    justify-items: center;
     gap: 20px;
+    padding: 10px;
 }
 
 /*
