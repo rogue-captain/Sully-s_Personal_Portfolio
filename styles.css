@@ -127,8 +127,8 @@
 
 #project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr));
    /* flex-direction: row-reverse; */
     justify-items: center;
     gap: 20px;
@@ -185,6 +185,7 @@
 .project-image:hover {
     transform: scale(1.1);
     Z-index: 10;
+	filter: brightness(200%);
 }
 
 #projects:hover {
