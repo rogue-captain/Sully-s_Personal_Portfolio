@@ -153,7 +153,6 @@
 */
 
 .project-grid-item {
-
     height: 30vh;
     width: 20vw;
 }
@@ -173,6 +172,11 @@
     font-size: medium;
     color: white;
     background-color: black;
+	
+	position: relative; /* Makes it independent of other content */
+
+
+    transition: transform 1s ease-in-out;
 }
 
 /* .project-image:hover {
@@ -182,9 +186,15 @@
     width: 125%;
 } */
 
+
+.project-grid-item:hover .project-item-title {
+	transform: translateY(210%); /* Moves the title down when image is hovered */
+   /* opacity: 0;  Hides the title */
+}
+
 .project-image:hover {
-    transform: scale(1.1);
-    Z-index: 10;
+    transform: scale(1.3);
+    Z-index: 100;
 	filter: brightness(200%);
 }
 
