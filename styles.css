@@ -38,10 +38,10 @@
 @keyframes expandGridItem {
 	from {
 		height: 30vh;
-		width: 20vh;
+		width: 20vw;
 	} to {
-		height: 32vw;
-		width: 30vw;
+		height: 40vh;
+		width: 25vw;
 	}
 }
 
@@ -300,13 +300,21 @@
 /*-------------------------------------- ABOUT ME SECTION -------------------------------------*/
 
 #aboutMe1 {
+	height: auto;
+	min-height: 100vh;
+	width: 100vw;
+	
     background-image: url("https://imgur.com/VuSSZAO.jpg");
+	background-size: cover;
+	background-position:center;
+	background-repeat: no-repeat;
+	
     display: flex;
     flex-direction: column; 
+	flex-grow: 1;
     justify-content: center;
     align-items: center;
-	height: 100vh;
-	width: 100vw;
+
     /*height: calc(100vh - 10vh);*/
     /*margin-top: 10vh;*/
     text-align: center;
@@ -325,20 +333,21 @@
 }
 
 #aboutMe2 {
+	height: auto;
+
+	width: auto;
+	
     display: flex;
     flex-direction: row; 
+	flex-grow: 1;
+	box-sizing: border-box;
+	
     justify-content: center;
     align-items: center;
-	max-height: 80vh;
-	width: auto;
+
     /*height: calc(100vh - 10vh);*/
     /*margin-top: 10vh;*/
     text-align: center;	
-}
-
-#aboutMePicContainer {
-	position: relative;
-	margin-bottom: 5vh;
 }
 
 #aboutMePicContainer:hover {
@@ -348,15 +357,21 @@
 #aboutMePic {
 	height: 100%;
 	width: 100%;
+	max-width: 25vw;
+	
 	border-radius: 8px;
 	box-shadow: 0 4px 10px rgb(0, 0, 0, 0.9);
 }
 
 #aboutMeTextContainer {
 	height: auto;
+
 	max-width: 60vw;
-	margin-bottom: 5vh;
+	
 	padding: 5vw;
+	position: relative;
+	overflow: contain;
+	box-sizing: border-box;
 }
 
 #aboutMe2 p {
@@ -364,6 +379,7 @@
     font-size: 25px;
     color: white;
 	position: relative;
+	
 }
 
 /*-------------------------------------- ABOUT ME SECTION -------------------------------------*/
@@ -388,29 +404,37 @@
 
 /*-------------------------------------- projects -------------------------------------*/
 #projects {
-    background-color: rgba(55, 100, 55, 0.5);
+    background-image: url("https://i.imgur.com/ZXr3C0e.gif");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
     height: auto;
     width: 100vw;
+	
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+	
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     font-weight: 200;
 }
 
-#projects:hover {
-    background-color: rgba(0, 128, 128, 1);
-}
+#projects:hover {}
 
 
 
 #projects h1 {
+	margin-top: 10vh;
+	
     font-size: 50px;
+	color: white;
+	font-size-adjust: relative;
     text-shadow: 2px 2px 1px rgba(55, 100, 55, 0.6);
     text-decoration: underline;
-	margin-top: 10vh;
+	
 }
 
 
@@ -507,10 +531,14 @@
 
 
 #skillsSection {
-    background-color: rgba(49, 189, 240, 0.5);
-    /*height: calc(100vh - 30vh);*/
 	height: 100vh;
     width: 100vw;
+	
+    background-image: url("https://i.imgur.com/EkLql95.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
     display: flex;
     flex-direction: grid;
     font-family: 'Courier New', Courier, monospace;
@@ -525,9 +553,7 @@
 	padding: 5vh;
 }
 
-#skillsSection:hover {
-    background-color: bisque;
-}
+#skillsSection:hover {}
 
 #skillsSection h1 {
 	top: 10;
@@ -556,7 +582,7 @@
 }
 
 .skills-category {
-  background-color: #fff;
+  background-color: aqua;;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
