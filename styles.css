@@ -189,7 +189,7 @@
 }
 
 #welcome-section-content h1 {
-    margin-top: 8vh;
+    margin-top: 2vh;
 	margin-bottom: 4vh;
     position: relative;
 	
@@ -206,7 +206,7 @@
     position: relative;
 	
     font-family: 'Courier New', Courier, monospace;
-    font-size: 24px;
+    font-size: 30px;
     text-shadow: 2px 2px 1px rgba(55, 100, 55, 0.5);
 	text-align: left;
 	margin-left: 5vw;
@@ -233,9 +233,9 @@
 
 
 #sullys-welcome-pic {
-	height: 100%;
-	max-height: 50vh;
-	width: 100%;
+	height: auto;
+	max-height: 60vh;
+	width: auto;
 	max-width: 40vw;
 	
 	position: relative;
