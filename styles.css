@@ -265,11 +265,12 @@
     flex-direction: row;
 	flex-shrink: 0;
 	position: fixed;
+	
     justify-content: center;
     align-items: center;
-	
     gap: 5vw;
 	padding: 5vh;
+	
 	background-color: rgba(55, 100, 55, 0.5);
 }
 
@@ -285,7 +286,7 @@
 .profile-link:hover {
     text-decoration: none;
     font-size: 30px;
-    color: purple;
+    color: teal;
     animation: bounce 2s;
 }
 
@@ -559,6 +560,7 @@
 	top: 10;
     font-size: 40px;
     text-decoration: underline;
+	color: white;
 }
 
 /* #skillsSection-icons-container {
@@ -582,7 +584,7 @@
 }
 
 .skills-category {
-  background-color: aqua;;
+  background-color: teal;
   border-radius: 16px;
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -592,6 +594,10 @@
 .skills-category:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+}
+
+.skills-category h3 {
+	color: white;
 }
 
 .category-title {
