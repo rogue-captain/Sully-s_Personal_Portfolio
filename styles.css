@@ -65,110 +65,7 @@
 
 
 
-@media (max-width: 600px) {
-  #navbar {
-	  display: flex;
-    flex-direction: row;
-    height: auto;
-	margin-bottom: 20px;
-  } 
-  
- .nav-link {
-    font-size: 1.5vw;
-  }  
-}
 
-
-@media (max-width: 600px) {
-  #welcome-section-content h1 {
-    font-size: 8vw;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  #welcome-section-content h2,
-  #welcome-section-content p {
-    font-size: 4vw;
-    text-align: center;
-    margin-left: 0;
-  }
-
-  #sullys-welcome-pic {
-    max-width: 80vw;
-    margin-right: 0;
-  }	
-}
-
-
-@media (max-width: 600px) {
-	
-	#projects {
-		display: flex;
-        flex-direction: column;
-        align-items: center;		
-	}
-    #project-grid {
-		display: flex;
-        flex-direction: column;
-        align-items: center;
-		position: relative;
-    }
-    .project-grid-item {
-		height: auto;
-        width: 90%;
-		position: relative;
-    }
-}
-
-
-@media (max-width: 600px) {
-	
-	#aboutMe1 {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
-	
-#aboutMe2 {
-	display: flex;
-    flex-direction: column;
-	
-	align-items: center;
-	text-align: center;
-  }
-
-  #aboutMePic {
-    max-width: 80vw;
-	margin-bottom: 20px;
-  }
-
-  #aboutMeTextContainer {
-    padding: 3vw;
-    max-width: 90vw;
-  }
-
-  #aboutMe2 p {
-    font-size: 4vw;
-  }	
-}
-
-
-@media (max-width: 600px) {
-  #skillsSection {
-	display: flex;
-	flex-direction: column;
-	
-	position: relative;	
-  }	
-  
-  #skillsContainerBox {
-	display: flex;
-	flex-direction: column;
-	
-	position: relative;
-  }
-}
 
 
 
@@ -352,7 +249,7 @@
 	
     display: flex;
     flex-direction: row;
-	flex-shrink: 0;
+
 	position: fixed;
 	
     justify-content: center;
@@ -520,7 +417,7 @@
 	color: white;
 	font-size-adjust: relative;
     text-shadow: 2px 2px 1px rgba(55, 100, 55, 0.6);
-    text-decoration: underline;
+    text-decoration: none;
 	
 }
 
@@ -647,6 +544,7 @@
 	padding: 2vw;
 	
 	text-align: center;
+	font-size: 50px;
 }
 
 #skillsHeader h1 {
@@ -672,10 +570,11 @@
 	
 	position: relative;
 	display: flex;
-	display-direction: row;
+	flex-direction: row;
 	box-sizing: border-box;
 	
 	align-items: center;
+	justify-content: center;
 	padding: 2vw;
 	gap: 3vw;
 }
@@ -683,9 +582,17 @@
 
 .skills-category {
   background-color: teal;
+  
+  height: auto;
+  min-height: 20vh;
+  width: 15vw;
+  
   border-radius: 16px;
-  padding: 20px;
+  padding: 2vw;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  
+  text-align: center;
+  
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -696,6 +603,12 @@
 
 .skills-category h3 {
 	color: white;
+	margin-bottom: 2vh;
+	text-align: center;
+}
+
+.skills-category li {
+	margin-bottom: 1vh;
 }
 
 .category-title {
@@ -745,4 +658,170 @@ footer p {
 
 footer p:hover {
     animation: slideIn 2s ease-in-out 1s; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEdia Query Parameters */
+
+@media (max-width: 600px) {
+  #navbar {
+	display: flex;
+    flex-direction: row;
+    height: auto;
+	margin-bottom: 20px;
+  } 
+  
+ .nav-link {
+    
+  }  
+}
+
+
+@media (max-width: 600px) {
+  #welcome-section-content h1 {
+    font-size: 8vw;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #welcome-section-content h2,
+  #welcome-section-content p {
+    font-size: 4vw;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #sullys-welcome-pic {
+    max-width: 80vw;
+    margin-right: 0;
+  }	
+  
+  #Contact-Icons-container {
+	  display: flex;
+	  flex-direction: row;
+ 
+	  gap: 2vw;
+	  justify-content: center;
+	  
+  }
+}
+
+
+@media (max-width: 600px) {
+	
+	#projects {
+		display: flex;
+        flex-direction: column;
+        align-items: center;		
+	}
+    #project-grid {
+		display: flex;
+        flex-direction: column;
+        align-items: center;
+		position: relative;
+    }
+	
+    .project-grid-item {
+		position: relative;
+		
+		height: 30vh;
+        width: 90vw;
+    }
+	
+	#projects h1 {
+		padding: 6vw;
+	}
+}
+
+
+@media (max-width: 600px) {
+	
+	#aboutMe1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+	
+#aboutMe2 {
+	display: flex;
+    flex-direction: column;
+	
+	align-items: center;
+	text-align: center;
+  }
+
+  #aboutMePic {
+    max-width: 80vw;
+	margin-bottom: 20px;
+  }
+
+  #aboutMeTextContainer {
+    padding: 3vw;
+    max-width: 90vw;
+  }
+
+  #aboutMe2 p {
+    font-size: 4vw;
+  }	
+}
+
+
+@media (max-width: 600px) {
+  #skillsSection {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	height: auto;
+	width: 100vw;	
+  }	
+  
+  #skillsHeader h1 {
+	  font-size: 10vw;
+  }
+  
+  #skillsContainerBox {
+	display: flex;
+	flex-direction: column;
+	
+	position: relative;
+	
+	height: auto;
+	width: 100vw;
+  }
+  
+  .skills-category {
+	display: flex;
+	flex-direction: column;
+	
+	position: relative;
+	box-sizing: border-box;
+	padding: 1vw;
+	
+	height: auto;
+	width: 80vw;
+  }
+  
+  .skills-category ul {
+	padding: 4vw;
+ 	  
+	list-style-type: square;
+	list-style-postion: inside;	
+  }
 }
