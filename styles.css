@@ -108,7 +108,7 @@
 }
 
 .nav-link {
-
+	text-decoration: none;
     font-size: 20px;
     color: white;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -265,6 +265,7 @@
 
     font-size: 25px;
     font-weight: bold;
+	text-decoration: none;
     color: white;
 }
 
@@ -599,6 +600,7 @@
 .skills-category:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.15);
+  background-color: purple;
 }
 
 .skills-category h3 {
