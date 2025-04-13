@@ -684,6 +684,7 @@ footer p:hover {
     flex-direction: row;
     height: auto;
 	margin-bottom: 20px;
+	gap: 4vw;
   } 
   
  .nav-link {
@@ -715,9 +716,13 @@ footer p:hover {
 	  display: flex;
 	  flex-direction: row;
  
-	  gap: 2vw;
+	  gap: 6vw;
 	  justify-content: center;
 	  
+  }
+  
+  .icon-label {
+	  display: none;
   }
 }
 
@@ -742,6 +747,10 @@ footer p:hover {
 		height: 30vh;
         width: 90vw;
     }
+	
+	.project-grid-item:hover {
+		animation: none;
+	}
 	
 	#projects h1 {
 		padding: 6vw;
